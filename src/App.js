@@ -6,8 +6,10 @@ const App = () => {
         <>
             <Navbar />
 
-            <div>
+            <div id="home">
                 <h1>Welcome</h1>
+
+                <h4>Buy our products, thanks.</h4>
             </div>
         </>
     );

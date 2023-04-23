@@ -1,3 +1,14 @@
 body {
-    margin: 100px 0 0;
+    margin: 100px auto 0;
+    width: 50vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#home h1 {
+    margin: 220px 0 0;
+    font-size: 4rem;
+}
+
+#home h4 {
+    margin-left: 8px;
 }

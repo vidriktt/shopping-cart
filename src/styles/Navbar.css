@@ -1,8 +1,8 @@
-ul {
+#navbar {
     text-align: right;
     list-style-type: none;
     margin: 0;
-    padding: 20px 5px;
+    padding: 20px 10px;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -10,11 +10,11 @@ ul {
     border-bottom: #8e2d8f solid 1px;
 }
 
-li {
+#navbar li {
     display: inline-block;
 }
 
-li a {
+#navbar li a {
     display: block;
     color: black;
     text-align: center;
@@ -24,11 +24,15 @@ li a {
     transition: transform 0.2s ease-in-out 0s;
 }
 
-li a:hover {
+#navbar li a:hover {
     transform: scale(1.15);
     transform-origin: center center;
 }
 
-.active {
+#navbar .active {
+    color: #8e2d8f;
+}
+
+#navbar-total {
     color: #8e2d8f;
 }

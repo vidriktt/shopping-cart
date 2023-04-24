@@ -1,10 +1,10 @@
 import './styles/App.css';
 import Navbar from './components/Navbar';
 
-const App = () => {
+const App = ({ cart }) => {
     return (
         <>
-            <Navbar />
+            <Navbar cart={cart} />
 
             <div id="home">
                 <h1>Welcome</h1>

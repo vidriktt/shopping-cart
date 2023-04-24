@@ -1,10 +1,10 @@
 #products {
-    margin-top: 120px;
+    margin-top: 90px;
 }
 
 #products-grid {
     display: grid;
-    width: 45vw;
+    width: 40vw;
     margin: auto;
     padding: 30px;
     overflow: auto;
@@ -21,12 +21,13 @@
 
 #products-grid img {
     display: block;
-    width: 40%;
+    width: 35%;
     margin: 10px auto;
 }
 
-#products-grid h4 {
+#products-grid h4, #products-grid h5 {
     margin: 10px 10px 5px;
+    text-align: center;
 }
 
 .button-div {

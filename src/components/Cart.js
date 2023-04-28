@@ -26,7 +26,7 @@ const Cart = ({ cart, onChangeQuantity, onClickRemove }) => {
                     <div>
                         <div id="cart-grid">
                             {cart.map((item) => {
-                                return <div key={item[0].id} className="cart-div">
+                                return <div key={item[0].id} className="cart-div" data-testid="cart-div">
                                     <img src={"images/product_icon.png"} alt={"product_icon"} />
                                     <h4>{item[0].title}</h4>
                                     <h5>{item[0].price}</h5>

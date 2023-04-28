@@ -36,26 +36,19 @@ describe("Navbar component", () => {
 
     it("renders correct cart amount number when products added to cart", async () => {
         const products = [{
-            id: 1,
-            title: "Product 1",
-            price: 9.99
+            id: 1, title: "Test product 1", price: 9.99
         }]
 
         const cart = [[
-            {
-                id: 1,
-                title: "Product 1",
-                price: 9.99
-            },
-            1,
-            1
+            { id: 1, title: "Product 1", price: 9.99 }, 1, 1
         ]]
-        
+
         function onClickAdd() {
             cart[0][1]++;
+            rerender(<Products products={products} cart={cart} onClickAdd={onClickAdd} />, { wrapper: BrowserRouter });
         }
 
-        render(<Products products={products} cart={cart} onClickAdd={onClickAdd} />, { wrapper: BrowserRouter });
+        const { rerender } = render(<Products products={products} cart={cart} onClickAdd={onClickAdd} />, { wrapper: BrowserRouter });
 
         const user = userEvent.setup();
         let cartLink = screen.getAllByRole("link")[2];

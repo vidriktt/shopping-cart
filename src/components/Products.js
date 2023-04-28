@@ -9,7 +9,7 @@ const Products = ({ cart, products, onClickAdd }) => {
             <div id="products">
                 <div id="products-grid">
                     {products.map((item) => {
-                        return <div key={item.id} className="product-div">
+                        return <div key={item.id} className="product-div" data-testid="product-div">
                             <img src={"images/product_icon.png"} alt={"product_icon"} />
                             <h4>{item.title}</h4>
                             <h5>{item.price}</h5>
